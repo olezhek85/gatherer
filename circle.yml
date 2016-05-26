@@ -1,0 +1,16 @@
+machine:
+  timezone:
+    Europe/Kiev
+  ruby:
+    version:
+      2.3.1
+dependencies:
+  pre:
+    - gem install bundler
+
+  override:
+    - bundle install: 
+        timeout: 180 
+test:
+  override:
+    - bundle exec rspec
