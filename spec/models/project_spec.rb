@@ -1,3 +1,4 @@
+require_relative '../../app/models/project'
 require 'rails_helper'
 
 RSpec.describe 'Project' do
