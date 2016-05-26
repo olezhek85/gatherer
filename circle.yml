@@ -7,7 +7,6 @@ machine:
 dependencies:
   pre:
     - gem install bundler
-
   override:
     - bundle install: 
         timeout: 180 
