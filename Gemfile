@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'rspec', '~> 3.4'
-  gem 'rspec_junit_formatter', '~> 0.2.3'
+  gem 'fuubar', '~> 2.0'
 end
 
 group :development do
