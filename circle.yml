@@ -1,19 +1,11 @@
 machine:
-  timezone:
-    Europe/Kiev
+  environment:
+    CONTINUOUS_INTEGRATION: true
   ruby:
     version:
       2.3.1
-dependencies:
-  pre:
-    - gem install bundler
-  override:
-    - bundle install: 
-        timeout: 180 
+  hosts:
+    circlehost: 127.0.0.1
 test:
   override:
-    - RAILS_ENV=test bundle exec rspec -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec.xml:
-        parallel: true
-        files:
-          - spec/models/project_spec.rb
-          - spec/**/*.rb  
+    - bundle exec rspec 
