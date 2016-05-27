@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'rspec', '~> 3.4'
   gem 'fuubar', '~> 2.0'
+  gem 'simplecov', '~> 0.11.2', require: false
 end
 
 group :development do
